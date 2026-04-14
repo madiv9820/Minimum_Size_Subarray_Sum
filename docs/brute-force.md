@@ -2,23 +2,23 @@
 
 [⬅ Back to README](../README.md)
 
-## Intuition 💡
+### Intuition 💡
 
-The simplest way to solve the problem is to try every possible subarray.
-For each starting index, extend the subarray one step at a time and keep adding values.
-As soon as the running sum becomes at least `target`, record that length.
+The **simplest** way to solve the problem is to try **every possible subarray**.
+For each **starting index**, extend the subarray one step at a time and keep adding values.
+As soon as the **running sum** becomes at least `target`, record that length.
 
-Because all numbers are positive, extending the same subarray further would only make it longer, so we can stop early for that start index.
+Because all numbers are **positive**, extending the same subarray further would only make it longer, so we can stop early for that start index.
 
-## Approach 🛠️
+### Approach 🛠️
 
-1. Start with the minimum answer as infinity.
-2. Pick each index as a possible starting point.
-3. Expand the subarray to the right while tracking the running sum.
-4. When the sum becomes at least `target`, update the minimum length.
+1. Start with the **minimum answer** as infinity.
+2. Pick each index as a possible **starting point**.
+3. Expand the subarray to the right while tracking the **running sum**.
+4. When the sum becomes at least `target`, update the **minimum length**.
 5. Break the inner loop and move to the next starting index.
 
-## Pseudocode 🧾
+### Pseudocode 🧾
 
 ```text
 set minLength = infinity
@@ -40,7 +40,10 @@ if minLength is still infinity:
 return minLength
 ```
 
-## Complexity 📊
+### Complexity 📊
 
-- Time: `O(n^2)`
-- Space: `O(1)`
+- **Time:** `O(n^2)` <br>
+  We may explore almost every pair of start and end positions in the array.
+  
+- **Space:** `O(1)` <br>
+  We only use a few extra variables, so the memory usage stays constant.
