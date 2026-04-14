@@ -51,3 +51,9 @@ Even the sum of the whole array is only `8`, which is less than `11`, so no vali
 ### In Short 🧠
 
 Find the **shortest continuous chunk** of the array whose sum is at least `target`.
+
+## Approach Pages 📚
+
+- [**Brute Force 🐢**](./docs/brute-force.md)
+- [**Sliding Window 🚪**](./docs/sliding-window.md)
+- [**Prefix Sum + Binary Search 🔍**](./docs/prefix-sum-binary-search.md)
