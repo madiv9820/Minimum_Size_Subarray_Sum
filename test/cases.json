@@ -1,0 +1,164 @@
+  [
+    {
+      "title": "Classic sliding window win 🚀",
+      "input": {
+        "target": 7,
+        "nums": [2, 3, 1, 2, 4, 3]
+      },
+      "output": 2,
+      "description": "The shortest valid subarray is [4, 3], which reaches the target with length 2."
+    },
+    {
+      "title": "Single element hits instantly 🎯",
+      "input": {
+        "target": 4,
+        "nums": [1, 4, 4]
+      },
+      "output": 1,
+      "description": "A single 4 already meets the target, so the minimum length is 1."
+    },
+    {
+      "title": "No possible window here ❌",
+      "input": {
+        "target": 11,
+        "nums": [1, 1, 1, 1, 1, 1, 1, 1]
+      },
+      "output": 0,
+      "description": "Even the full array sums to only 8, so no qualifying subarray exists."
+    },
+    {
+      "title": "Whole array needed 📦",
+      "input": {
+        "target": 15,
+        "nums": [1, 2, 3, 4, 5]
+      },
+      "output": 5,
+      "description": "You need every element to reach 15, so the answer is the full array length."
+    },
+    {
+      "title": "Tight window in the middle 🔍",
+      "input": {
+        "target": 8,
+        "nums": [1, 2, 3, 5, 1, 1]
+      },
+      "output": 2,
+      "description": "The subarray [3, 5] hits the target with the smallest possible length of 2."
+    },
+    {
+      "title": "Edge case with one number ⚡",
+      "input": {
+        "target": 5,
+        "nums": [5]
+      },
+      "output": 1,
+      "description": "A one-element array can still be the perfect answer when it matches the target."
+    },
+    {
+      "title": "Single value still falls short 🌧️",
+      "input": {
+        "target": 6,
+        "nums": [5]
+      },
+      "output": 0,
+      "description": "When the only number is smaller than the target, no valid subarray exists."
+    },
+    {
+      "title": "Best answer appears right at the start 🏁",
+      "input": {
+        "target": 6,
+        "nums": [6, 1, 2, 3]
+      },
+      "output": 1,
+      "description": "The first element alone hits the target, so the minimum window length is 1."
+    },
+    {
+      "title": "Best answer waits until the end 🎬",
+      "input": {
+        "target": 9,
+        "nums": [1, 1, 1, 1, 9]
+      },
+      "output": 1,
+      "description": "The final element forms the shortest valid subarray all by itself."
+    },
+    {
+      "title": "Pairs beat larger windows 🤝",
+      "input": {
+        "target": 10,
+        "nums": [5, 5, 1, 1, 1]
+      },
+      "output": 2,
+      "description": "The pair [5, 5] reaches the target faster than any longer window."
+    },
+    {
+      "title": "Three-step climb to the target 🪜",
+      "input": {
+        "target": 9,
+        "nums": [2, 3, 4]
+      },
+      "output": 3,
+      "description": "Every element is needed because no shorter contiguous part sums to 9."
+    },
+    {
+      "title": "Repeating numbers create a neat window 🔁",
+      "input": {
+        "target": 6,
+        "nums": [2, 2, 2, 2]
+      },
+      "output": 3,
+      "description": "Any three consecutive 2s sum to 6, making 3 the smallest valid length."
+    },
+    {
+      "title": "Large value ends the search fast 💥",
+      "input": {
+        "target": 100,
+        "nums": [1, 2, 3, 100]
+      },
+      "output": 1,
+      "description": "A single large number can immediately satisfy the target and minimize the answer."
+    },
+    {
+      "title": "Window shrinks after overshooting ✂️",
+      "input": {
+        "target": 15,
+        "nums": [5, 1, 3, 5, 10, 7, 4, 9, 2, 8]
+      },
+      "output": 2,
+      "description": "After the sum grows past the target, the smallest valid window becomes [10, 7]."
+    },
+    {
+      "title": "Many small steps, one exact finish 🧩",
+      "input": {
+        "target": 12,
+        "nums": [1, 2, 3, 4, 5]
+      },
+      "output": 3,
+      "description": "The shortest valid subarray is [3, 4, 5], which totals exactly 12."
+    },
+    {
+      "title": "Target larger than total sum 🚫",
+      "input": {
+        "target": 50,
+        "nums": [5, 10, 15]
+      },
+      "output": 0,
+      "description": "Since the whole array sums to only 30, there is no qualifying window."
+    },
+    {
+      "title": "Two big neighbors save the day 🛟",
+      "input": {
+        "target": 13,
+        "nums": [2, 1, 6, 7, 1]
+      },
+      "output": 2,
+      "description": "The shortest valid subarray is [6, 7], which reaches 13 with length 2."
+    },
+    {
+      "title": "Exact target in the middle lane 🎯",
+      "input": {
+        "target": 7,
+        "nums": [1, 1, 7, 1, 1]
+      },
+      "output": 1,
+      "description": "A single middle element matches the target exactly, so the answer is 1."
+    }
+  ]
